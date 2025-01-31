@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'NewFont';
+    src: url('NewFont-Regular.otf');
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#background {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/bg.png");
+}
+
+.logo {
+    position: absolute;
+    padding-right: 35px;
+    display: inline;
+    float: right;
+    right: 0;
+    top: 35px;
+}
+
+#ContainerQuestions {
+    font-family: "NewFont";
+    width: 60vw;
+    height: 50vh;
+    font-size: 24px;
+    margin-left: 35px;
+    margin-top: 35px;
+    letter-spacing: 2px;
+    transform-origin: 0 0;
+    transform: scale(1.2,1);
+    -webkit-text-stroke:1.1px black;
+}
+
+#ContainerReponses {
+    width: fit-content;
+}
+
+.Reponse {
+    margin: 0px 0 15px 35px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+/* .Reponse:hover {
+    background-color: grey;
+} */
+
+#ButtonsContainer {
+    font-family: "NewFont";
+    width: 50vw;
+    font-size: 24px;
+    margin-left: 35px;
+    margin-top: 35px;
+    letter-spacing: 2px;
+    transform-origin: 0 0;
+    transform: scale(1.2,1);
+    -webkit-text-stroke:1.1px black;
+}
+
+#PrevButton {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    width: fit-content;
+    float: left;
+    margin: 5px;
+}
+
+/* #PrevButton:hover {
+    background-color: grey;
+} */
+
+#NextButton {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    width: fit-content;
+    float: left;
+    margin: 5px;
+}
+
+/* #NextButton:hover {
+    background-color: grey;
+} */
+
+
+/* Le tableau qui contient toutes les réponses */
+
+#ToutesLesReponses {
+    top: 10px;
+    position: absolute;
+    font-family: "NewFont";
+    display: none;
+    letter-spacing: 2px;
+    transform-origin: 0 0;
+    transform: scale(1.2,1);
+    -webkit-text-stroke:1.1px black;
+}
+
+
+/* Le résultat */
+
+#Result {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#ContainerImagesFinales {
+    pointer-events: none;
+    /* position: absolute; */
+    width: 10%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ImageFinale {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#OeufModif {
+    width: 250px;
+}
+
+#Q4_6 {
+    z-index: 10;
+}
+
+#Q7_9 {}
+
+#DerniereImage {
+    z-index: 11;
+}

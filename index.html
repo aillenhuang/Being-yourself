@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Ici le script javascript, c'est lui qui fait tout fonctionner :) -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="img/logo.png" alt="logo">
+    </div>
+
+    <img id="background">
+
+    <!-- Questionnaire -->
+    <div id="Questionnaire">
+        <div id="ToutesLesReponses"></div>
+        <div id="ContainerQuestions">
+            <p id="Question">
+                <!-- Les questions sont chargées via un script javascript-->
+            </p>
+            <div id="ContainerReponses">
+                <!-- Création de balise <p class="Reponse">, le nombre de balises est différent à chaques questions -->
+            </div>
+        </div>
+
+        <!-- Les boutons qui permettent de revenir en arrière ou d'aller a la question suivante -->
+        <div id="ButtonsContainer">
+            <div id="PrevButton">Back</div>
+            <div id="NextButton">Next question!</div>
+        </div>
+    </div>
+
+    <!-- Le résultat, pas visible tant qu'on a pas répondu à toutes les questions -->
+    <div id="Result">
+        <div id="ContainerImagesFinales">
+            <div id="Print"></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
